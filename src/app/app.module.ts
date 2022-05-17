@@ -8,6 +8,7 @@ import { ArticleFormComponent } from './article-form/article-form.component';
 import { BlogService } from './blog.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CustomersComponent } from './customers/customers.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CustomersComponent } from './customers/customers.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [BlogService],
   bootstrap: [AppComponent]
